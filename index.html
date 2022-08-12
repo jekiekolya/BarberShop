@@ -5,56 +5,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BarberShop</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Modern Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
+
   <body>
     <!-- Header section-->
-    <header>
+    <header class="header">
       <!-- logo -->
-      <a href="./index.html">
-        <img src="./images/header/Logo.png" alt="logo" width="68" height="56" />
+      <a class="header__link" href="./index.html">
+        <img
+          class="header__logo"
+          src="./images/header/Logo.png"
+          alt="logo"
+          width="68"
+          height="56"
+        />
       </a>
 
       <!-- main navigation -->
-      <nav>
-        <ul>
-          <li>
-            <a href="./index.html">About</a>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="./index.html">About</a>
           </li>
-          <li>
-            <a href="">Services and prices</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="">Services and prices</a>
           </li>
-          <li>
-            <a href="">Barbers</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="">Barbers</a>
           </li>
-          <li>
-            <a href="">Contacts</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="">Contacts</a>
           </li>
         </ul>
       </nav>
 
       <!-- Contacts for order -->
       <div>
-        <a href="tel:+380441111111">+38 044 111 11 11</a>
-        <button type="button">Online-booking</button>
+        <a class="contact__link" href="tel:+380441111111">+38 044 111 11 11</a>
+        <button class="button" type="button">Online-booking</button>
       </div>
     </header>
 
     <!-- Main section -->
     <main>
       <!-- Hero section -->
-      <section>
-        <ul>
-          <li><a href="" target="_blank" rel="nofollow noopener noreferrer">Youtube</a></li>
-          <li><a href="" target="_blank" rel="nofollow noopener noreferrer">Instagram</a></li>
+      <section class="hero">
+        <ul class="hero__list">
+          <li class="hero__item"
+            ><a class="hero__link" href="" target="_blank" rel="nofollow noopener noreferrer"
+              >Youtube</a
+            ></li
+          >
+          <li class="hero__item"
+            ><a class="hero__link" href="" target="_blank" rel="nofollow noopener noreferrer"
+              >Instagram</a
+            ></li
+          >
         </ul>
         <div>
-          <p>A hair salon for men in Kyiv</p>
-          <h1>BarberShop</h1>
-          <p>We are experts in trendy men’s haircuts. We work quickly, carefully and with style.</p>
+          <p class="uppertitle">A hair salon for men in Kyiv</p>
+          <h1 class="main-title">BarberShop</h1>
+          <p class="subtitle">
+            We are experts in trendy men’s haircuts. We work quickly, carefully and with style.</p
+          >
         </div>
-        <ul>
-          <li><button type="button">Back</button></li>
-          <li><button type="button">Forward</button></li>
+        <ul class="hero__list">
+          <li class="hero__item"><button class="hero__btn" type="button">Back</button></li>
+          <li class="hero__item"
+            ><button class="hero__btn hero__btn--white" type="button">Forward</button></li
+          >
         </ul>
       </section>
 
@@ -113,7 +149,172 @@
         <button type="button">online-booking</button>
       </section>
 
-      <!-- Section adventeges -->
+      <!-- Section our adventeges -->
+
+      <section>
+        <ul>
+          <li>
+            <p>600<sup>+</sup></p>
+            <p>Satisfied customers per day</p>
+          </li>
+          <li>
+            <p>50<sup>+</sup></p>
+            <p>Awards for excellent service</p>
+          </li>
+          <li>
+            <p>20<sup>+</sup></p>
+            <p>Kyiv’s best barbers</p>
+          </li>
+          <li>
+            <p>100<sup>+</sup></p>
+            <p>Gifts for regular customers</p>
+          </li>
+        </ul>
+
+        <div>
+          <p>old traditional school</p>
+          <h2>Why people come to us?</h2>
+          <h3>
+            Only good things are said about us. But it's better to see and feel 1 time than read 10
+            times.
+          </h3>
+        </div>
+      </section>
+
+      <!-- Our team -->
+      <section>
+        <p>for true enjoyers of the atmosphere</p>
+        <h2>Our barbers</h2>
+        <ul>
+          <li>
+            <img src="./images/team/img1.jpg" alt="" width="370px" height="346px" />
+            <h3>John Smith</h3>
+            <p>Extreme Barber</p>
+            <ul>
+              <li>
+                <a href="">
+                  <svg width="" height="">
+                    <use href=""></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <svg width="" height="">
+                    <use href=""></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <svg width="" height="">
+                    <use href=""></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <svg width="" height="">
+                    <use href=""></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <img src="./images/team/img2.jpg" alt="" width="370px" height="346px" />
+            <h3>Michele Doe</h3>
+            <p>Extreme Barber</p>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </li>
+          <li>
+            <img src="./images/team/img3.jpg" alt="" width="370px" height="346px" />
+            <h3>Alan Black</h3>
+            <p>Extreme Barber</p>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Gallery -->
+      <section>
+        <h2>Our Gallery</h2>
+        <p>in Latin, "barba" means "beard"</p>
+        <ul>
+          <li>
+            <img src="./images/gallery/Gallegy-1.jpg" alt="" />
+          </li>
+          <li>
+            <img src="./images/gallery/Gallegy-2.jpg" alt="" />
+          </li>
+          <li>
+            <img src="./images/gallery/Gallegy-3.jpg" alt="" />
+          </li>
+          <li>
+            <img src="./images/gallery/Gallegy-4.jpg" alt="" />
+          </li>
+        </ul>
+      </section>
+
+      <!-- Booking & Contatcs sections -->
+      <section>
+        <form>
+          <label>
+            <span>name*</span>
+            <input type="text" name="name" placeholder=" " />
+          </label>
+          <label>
+            <span>phone*</span>
+            <input type="tel" name="tel" placeholder=" " />
+          </label>
+          <label>
+            <span>message</span>
+            <textarea name="message" resize="none" placeholder=" "></textarea>
+          </label>
+
+          <button type="submit">send</button>
+        </form>
+
+        <div>
+          <h2>Contacts</h2>
+          <address>
+            <ul>
+              <li>
+                <a href="">st. Vasilkovaya, 7A Kiev, 08132</a>
+              </li>
+              <li>
+                <a href="tel:+380441111111">+38 044 111 11 11</a>
+              </li>
+              <li>
+                <a href="mailto:barbershop@email.com">barbershop@email.com</a>
+              </li>
+            </ul>
+          </address>
+          <p>working hours</p>
+          <p>
+            Every day from <time datetime="09:00">9:00</time> to
+            <time datetime="22:00">22:00</time>
+          </p>
+        </div>
+      </section>
     </main>
+
+    <footer>
+      <p>&#169; Copyright 2020</p>
+      <ul>
+        <li>Instagram</li>
+        <li>Youtube</li>
+      </ul>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,35 @@
+body {
+  font-family: $main-font, sans-serif;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: $text-dark-color;
+}
+
+button {
+  cursor: pointer;
+}
+
+.button {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  color: $text-light-color;
+  background-color: transparent;
+
+  border: 1px solid $accent-color;
+  border-radius: $btn-radius;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+
+  &--white-theme {
+    color: $text-dark-color;
+  }
+}
